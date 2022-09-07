@@ -31,6 +31,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
   },
   "devDependencies": {
+    "eslint": "^8.23.0",
     "prettier": "^2.7.1"
   },
   "peerDependencies": {
@@ -39,9 +40,10 @@
   "scripts": {
     "format": "prettier --check \"**/*.(js|json|mjs|cjs|md)\"",
     "format:fix": "prettier --write \"**/*.(js|json|mjs|cjs|md)\"",
-    "publish:pre": "npm version prerelease && git push origin master --tags",
-    "publish:patch": "npm version patch && git push origin master --tags",
-    "publish:minor": "npm version minor && git push origin master --tags",
-    "publish:major": "npm version major && git push origin master --tags"
+    "lint": "eslint . --ext .js",
+    "publish:pre": "npm run lint && npm version prerelease && git push origin master --tags",
+    "publish:patch": "npm run lint && npm version patch && git push origin master --tags",
+    "publish:minor": "npm run lint && npm version minor && git push origin master --tags",
+    "publish:major": "npm run lint && npm version major && git push origin master --tags"
   }
 }

@@ -51,8 +51,7 @@ function _createPlugins() {
     : _plugins;
 }
 
-const defaultPresets = _createDefaultPresets();
-const defaultPlugins = (module.exports = {
+module.exports = {
   preset: _createPresets(),
   plugins: _createPlugins(),
-});
+};
