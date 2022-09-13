@@ -19,7 +19,7 @@ function _createPresets() {
             },
           }
         : {
-            useBuiltIns: 'entry',
+            useBuiltIns: 'usage',
             corejs: 3,
           },
     ][
