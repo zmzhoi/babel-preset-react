@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-  npm i -D @zmzhoi/babel-preset-react
+npm i -D @zmzhoi/babel-preset-react
 ```
 
 ## Usage
@@ -13,9 +13,9 @@
 **.babelrc:**
 
 ```
-  {
-    "presets": ["@zmzhoi/babel-preset-react"]
-  }
+{
+  "presets": ["@zmzhoi/babel-preset-react"]
+}
 ```
 
 ## Configuration
