@@ -30,7 +30,7 @@ function _createPresets() {
             // [브라우저 환경]
             //  - targets: No targets
             //   (현재는 targets 이 지정되지 않은 상태이므로, Oldest browsers를 대상으로 한다.)
-            //   (targets을 지정하는 것이 권장된다. -> 호스트 프로젝트에서 browserslist 사용.)
+            //   (targets을 지정하는 것이 권장된다. -> 호스트 프로젝트에서 .browserslistrc 파일 생성.)
             //  - useBuiltIns: entry
             //   (폴리필(corejs) 삽입을 허용한다. -> 필요시 entry 파일 최상단에 삽입 필요.)
             //   (넓은 지원을 위해 corejs는 3버전을 사용한다.)

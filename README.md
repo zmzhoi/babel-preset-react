@@ -24,7 +24,7 @@ npm i -D @zmzhoi/babel-preset-react
 
   - `No Targets` 옵션이 적용되어 있습니다. (Older browsers)
   - code size를 줄이기 위해, `targets` 옵션을 명시하는 것을 권장합니다.
-    > `targets` 옵션을 명시할 땐, 프로젝트 root에 `.browserslistrc` 파일을 생성하는 것을 권장합니다.
+    > `targets` 옵션을 명시할 땐, 프로젝트 root에 `.browserslistrc` 파일을 생성하여 쿼리를 작성할 것을 권장합니다.
   - `polyfill` 삽입이 허용되어 있습니다.
 
     ```
