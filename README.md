@@ -28,10 +28,10 @@ npm i -D @zmzhoi/babel-preset-react
   - `polyfill` 삽입이 허용되어 있습니다.
 
     ```
-      {
-        useBuiltIns: 'entry',
-        corejs: 3,
-      }
+    {
+      useBuiltIns: 'entry',
+      corejs: 3,
+    }
     ```
 
     > `polyfill` 삽입을 원하시면 `core-js@3`을 설치하고 entry 파일 최상단에서 `core-js`를 import하세요.
@@ -39,13 +39,13 @@ npm i -D @zmzhoi/babel-preset-react
     installation:
 
     ```
-      npm install core-js@3
+    npm install core-js@3
     ```
 
     then:
 
     ```
-      import "core-js"; // top of entry file
+    import "core-js"; // top of entry file
     ```
 
     > ❗️ `process.env.BABEL_ENV` 혹은 `process.env.NODE_ENV` 가 'test'인 경우, 테스트 환경으로 간주하고 `targets` 이 현재 사용하고 있는 NodeJS 버전으로 설정됩니다.
@@ -56,10 +56,10 @@ npm i -D @zmzhoi/babel-preset-react
     > Babel helpers, regenerator 생성 구문을 재사용(re-use). from `@babel/runtime` package.
   - `polyfill`은 생성하지 않습니다.
     ```
-      {
-        ...
-        corejs: false // <-
-      }
+    {
+      ...
+      corejs: false // <-
+    }
     ```
 
 - **@babel/preset-typescript**
