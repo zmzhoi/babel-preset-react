@@ -83,7 +83,7 @@ function _createPlugins() {
         version: require(babelRuntimePath + '/package.json').version, // 버전 명시.
       },
     ],
-  ];
+  ].filter(Boolean);
 
   return plugins;
 }
