@@ -88,7 +88,12 @@ function _createPlugins() {
   return plugins;
 }
 
-module.exports = {
-  preset: _createPresets(),
-  plugins: _createPlugins(),
+// eslint-disable-next-line no-unused-vars
+module.exports = function (api, opts) {
+  // TODO: api option 조사
+  // opts option은 추후 필요해지면 사용할 예정.
+  return {
+    presets: _createPresets(),
+    plugins: _createPlugins(),
+  };
 };
