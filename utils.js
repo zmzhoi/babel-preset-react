@@ -12,11 +12,10 @@ module.exports = {
   },
   hasReactJsxRuntime() {
     try {
-      // >= react 17
+      // jsx-runtime이 react 구버전까지 backporting 되었다고 함.
       require.resolve('react/jsx-runtime');
       return true;
     } catch (e) {
-      // < react 17
       return false;
     }
   },

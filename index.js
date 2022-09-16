@@ -44,7 +44,7 @@ function _createPresets() {
       '@babel/preset-react',
       {
         development: env !== 'production',
-        runtime: usingJsxRuntime ? 'automatic' : 'classic', // react@17 이상을 사용하는 경우에는 runtime: automatic (= react/jsx-runtime 사용)
+        runtime: usingJsxRuntime ? 'automatic' : 'classic', // jsx-runtime이 react 구버전까지 backporting 되었다고 함.
       },
     ],
 
