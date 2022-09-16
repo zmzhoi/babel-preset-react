@@ -1,3 +1,5 @@
+'use strict';
+
 const { existsSync } = require('fs');
 const path = require('path');
 
