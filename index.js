@@ -2,10 +2,7 @@
 
 const { hasTypescriptConfigFile, hasReactJsxRuntime, getBabelRuntimePath } = require('./utils');
 
-const env = process.env.BABEL_ENV || process.env.NODE_ENV;
-if (!env) {
-  throw new Error('process.env.BABEL_ENV | process.env.NODE_ENV must be set!');
-}
+const env = process.env.BABEL_ENV || process.env.NODE_ENV || 'development';
 
 const isProduction = env === 'production';
 const usingTypescript = hasTypescriptConfigFile();
