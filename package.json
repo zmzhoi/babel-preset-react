@@ -1,7 +1,7 @@
 {
   "name": "@zmzhoi/babel-preset-react",
   "version": "1.0.0",
-  "description": "This package is a babel preset for React project.",
+  "description": "⛔️ DEPRECATED",
   "main": "index.js",
   "keywords": [
     "babel",
